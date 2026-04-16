@@ -1,0 +1,24 @@
+venv/
+venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Local/editor/runtime
+.jupyter/
+.pytest_cache/
+.mypy_cache/
+
+# Challenge artifacts not part of minimal code-first repo
+notebooks/
+docs/
+data/
+config/
+
+# Optional deployment helper scripts (exclude for strict minimal push)
+scripts/

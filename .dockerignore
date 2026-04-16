@@ -1,0 +1,14 @@
+.git
+.gitignore
+venv
+__pycache__
+*.pyc
+*.pyo
+.ipynb_checkpoints
+notebooks
+data
+docs
+report.docx
+report.md
+.env
+.jupyter
