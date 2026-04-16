@@ -2,8 +2,6 @@
 
 Production-minded guardrail service that detects **personalized mental health advice** and returns a structured safety decision (`safe` / `unsafe`) with confidence and explainability.
 
-## Why This Repo
-
 This code demonstrates:
 - sociotechnical boundary design (support vs advice),
 - LLM-as-a-judge + deterministic guardrail modes,
@@ -42,6 +40,9 @@ The same pattern can be applied to finance, for example:
 - provide clear rationale for non-technical stakeholders.
 
 ## API Contract
+
+Guardrail scope:
+- this service evaluates **assistant outputs before display** (not user inputs).
 
 Endpoint:
 - `POST /decide`
@@ -122,8 +123,8 @@ Important:
 
 Example hosted call (after receiving a key and URL):
 ```bash
-curl -s https://YOUR_HOSTED_URL/decide \
-  -H 'X-API-Key: YOUR_ASSIGNED_KEY' \
+curl -s https://URL/decide \
+  -H 'X-API-Key: ASSIGNED_KEY' \
   -H 'Content-Type: application/json' \
   -d '{"text":"I hear you and I am here with you.","mode":"rule"}'
 ```
@@ -165,7 +166,7 @@ Restricted mode with standard key (`403`):
 }
 ```
 
-## Cost and Abuse Controls
+## Controls
 
 Built-in controls:
 - API key authentication (`X-API-Key`)
