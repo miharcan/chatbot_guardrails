@@ -1,3 +1,5 @@
+> **GCP retirement — 11 November 2026:** Cloud deployment is being archived and shut down. Historical cloud URLs and deployment examples below are retained as reference. Do not run them. See [retirement records](docs/gcp-retirement/README.md).
+
 # Mental Health Guardrails API
 
 Production-minded guardrail service that detects **personalized mental health advice** and returns a structured safety decision (`safe` / `unsafe`) with confidence and explainability.
