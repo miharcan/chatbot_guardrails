@@ -1,6 +1,6 @@
 # GCP retirement
 
-Date: 11 November 2026. Status: archive and shutdown in progress; final verification will be recorded here.
+Date: 11 November 2026. Status: archive and cloud shutdown verified on 11 November 2026. All eight inventoried GCP projects are shut down and billing links removed; local GCP logins were revoked. Full checksums and receipts are in the private archive.
 
 Former GCP project: `mental-health-guardrails`. Former Cloud Run services: `chatbot-guardrails-api`.
 
